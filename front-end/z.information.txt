@@ -1,0 +1,71 @@
+Para gerar a build do projeto
+- npm run build
+
+Para usar o Prettier para formatar o projeto
+- npm run format
+
+Para usar o Eslint para verificar
+- npm run lint
+
+
+///  PAGE GITHUB ///
+Para colocar na page do github
+
+- em package.json
+
+-- baixe 
+	npm install gh-pages --save-dev
+
+-- no primeiro componente
+    homepage": "https://Douglas1705.github.io/<nome do repositorio>",
+
+-- em scripts 
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+
+- em vitecongig
+     base: '/spotify-clone-react',
+
+- usar o npm run deploy para enviar para o github o deploy
+
+- no github SETTINGS > PAGES > GH-PAGE ./ROOT
+
+/// FINAL PAGE GITHUB ///
+
+/// Git convenções ///
+
+    feat: Adição de uma nova funcionalidade.
+
+        Exemplo: git commit -m "feat: adiciona autenticação de usuário"
+
+    fix: Correção de um bug.
+
+        Exemplo: git commit -m "fix: corrige erro de autenticação"
+
+    docs: Mudanças na documentação.
+
+        Exemplo: git commit -m "docs: atualiza README com instruções de setup"
+
+    style: Mudanças que não afetam o significado do código (espaços em branco, formatação, ponto e vírgula faltando, etc.).
+
+        Exemplo: git commit -m "style: ajusta formatação do código"
+
+    refactor: Refatoração do código sem mudar sua funcionalidade.
+
+        Exemplo: git commit -m "refactor: melhora performance da função de login"
+
+    perf: Mudanças que melhoram a performance.
+
+        Exemplo: git commit -m "perf: otimiza carregamento de imagens"
+
+    test: Adição ou correção de testes.
+
+        Exemplo: git commit -m "test: adiciona testes unitários para componente de login"
+
+    chore: Atualizações de tarefas de build ou ferramentas auxiliares.
+
+        Exemplo: git commit -m "chore: atualiza dependências no package.json"
+
+    revert: Reversão de commits anteriores.
+
+        Exemplo: git commit -m "revert: desfaz commit x"
